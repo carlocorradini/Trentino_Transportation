@@ -1,0 +1,163 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/2dad489f-4ce3-4e0d-9122-b70df55b8ef2>
+        rdf:type           schema:Organization ;
+        schema:address     <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/b0bb325d-f408-4dac-80e0-2389d8efb97f> ;
+        schema:email       "knowdive@disi.unitn.it" ;
+        schema:identifier  "http://knowdive.disi.unitn.it"^^xsd:anyURI ;
+        schema:legalName   "Knowdive" ;
+        schema:leiCode     "http://knowdive.disi.unitn.it" ;
+        schema:logo        "http://knowdive.disi.unitn.it/wp-content/uploads/knowdive-new-logo.png"^^xsd:anyURI ;
+        schema:memberOf    <https://www.epos-eu.org/epos-dcat-ap#Organization/78574deb-e40e-4c05-a5c6-40beeef01aa0> ;
+        schema:url         "http://knowdive.disi.unitn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/78574deb-e40e-4c05-a5c6-40beeef01aa0>
+        rdf:type           schema:Organization ;
+        schema:address     <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/cd879ddb-55b6-4620-a0e4-c85a2df9f483> ;
+        schema:email       "ateneo@unitn.it" , "ateneo@pec.unitn.it" ;
+        schema:identifier  "www.unitn.it"^^xsd:anyURI ;
+        schema:legalName   "Università degli Studi di Trento" ;
+        schema:leiCode     "00340520220" ;
+        schema:logo        "https://static-cdn.unitn.it/sites/www.unitn.it/themes/unitn_theme/images/newlogo_unitn_en.png"^^xsd:anyURI ;
+        schema:telephone   "0461281111" ;
+        schema:url         "www.unitn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/84efa52e-3879-4d09-b0b9-36362e915866>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-01-25T00:00:00Z"^^xsd:dateTime ;
+        schema:startDate  "2021-09-13T00:00:00Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/b0bb325d-f408-4dac-80e0-2389d8efb97f>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Povo (TN)" ;
+        schema:postalCode       "I-38123" ;
+        schema:streetAddress    "Via Sommarive 9" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/4040fa1c-755a-4706-9fcd-b2e9d6fbb755>
+        rdf:type         skos:Concept ;
+        skos:definition  "Land transport is the transport or movement of people, animals or goods from one location to another location on land." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f913bd20-8e7b-4d82-9688-ca745a432f24> ;
+        skos:prefLabel   "Land Transport" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f913bd20-8e7b-4d82-9688-ca745a432f24>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The movement of people or goods from one place to another." ;
+        dct:title        "Transport" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ca07b831-220f-4c49-bc3b-6e8215eb3238>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en-US" , "it-IT" ;
+        schema:contactType        "Member" ;
+        schema:email              "carlo.corradini@studenti.unitn.it" ;
+        schema:name               "Carlo Corradini" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/520bf2b3-6fcc-45ad-971a-b17df5fe98f0>
+        rdf:type         skos:Concept ;
+        skos:definition  "Inception is the first iTelos phase:\r\nInputs:\r\n  * Purpose\r\n  * List of data sources\r\n  * List of reference teleologies\r\nOutputs:\r\n  * Classified Competency Questions (CQ)\r\n  * Datasets\r\n  * Reference teleologies\r\nObjectives:\r\n  * Start the Purpose formalization process that will be carried on during the second and third phase, leading to the ETG generation\r\n  * Collect the data and knowledge resources to be integrated and classify their elements into the reusability categories\r\nIn order to identify the level of reusability of the resources collected and handled along the methodology, all the resource elements (such as entities, entity properties, ETypes, and others) are classified into one of three reusability categories, defined as follow:\r\n  * Common: This category involves resources associated to aspects which are common to all domains, also outside the project’s DoI\r\n  * Core: This category involves resources associated to the more core aspects of DoI. They carry information about the most important aspects considered by the purpose, information without which it would be impossible to develop the EG\r\n  * Contextual:  This last category involves resources which carry specific, possibly unique, information from the domain of interest. These are the resources whose main goal is to create added value. If core resources are necessary for a meaningful application, contextual resources are the ones which can make the difference with respect to the competitors\r\n" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5edb028b-96af-4035-8d62-c253acd5a3c5> ;
+        skos:prefLabel   "Inception Phase" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2d8e5529-0e68-4e0d-af09-49a96f1c6c25>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W4.L7.M3.T8.3.DataCollection&Preparation.pdf" , "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W4.L7.M3.T8.1-2.PurposeForm&Classification.pdf" , "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W2.L2.M2.T4.1.iTelosPrinciples.pdf" , "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W2.L3.M2.T4.2.iTelosStructure.pdf" ;
+        dct:description   "Inception Sheet template is available at https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/templates/InceptionSheet.xlsx" , "Inception Sheet is in xlsx format. See https://wikipedia.org/wiki/Microsoft_Excel for more information." , "Inception Sheet Metadata regarding Trentino Transportation." ;
+        dct:format        "https://en.wikipedia.org/wiki/Microsoft_Excel"^^xsd:anyURI ;
+        dct:identifier    "https://github.com/carlocorradini/Trentino-Transportation/tree/main/Datasets/Inception"^^xsd:anyURI ;
+        dct:issued        "2021-12-10T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" ;
+        dct:license       "https://opensource.org/licenses/MIT"^^xsd:anyURI ;
+        dct:modified      "2021-12-10T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://opensource.org/licenses/MIT" ;
+        dct:title         "Inception Sheet" , "Trentino Transportation" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 998ade525edfa679bb4390ebfd8d0bea" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/b9645f82-9500-414c-a51d-255ff657c69e> ;
+        dcat:accessURL    "https://github.com/carlocorradini/Trentino-Transportation/tree/main/Datasets/Inception"^^xsd:anyURI , "https://drive.google.com/drive/folders/1-9_sf2hXrcE8GRTSypQHovo0ukNaeh8E?usp=sharing"^^xsd:anyURI ;
+        dcat:byteSize     "15434.0"^^xsd:double ;
+        dcat:downloadURL  "https://github.com/carlocorradini/Trentino-Transportation/raw/main/Teleologies/Inception/InceptionSheet.xlsx"^^xsd:anyURI ;
+        dcat:mediaType    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+        foaf:page         "https://github.com/carlocorradini/Trentino-Transportation" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/cd879ddb-55b6-4620-a0e4-c85a2df9f483>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    "Via Calepina 14" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5edb028b-96af-4035-8d62-c253acd5a3c5>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The DI Purpose, expressed by the final user as a natural language sentence, define the main goal for the whole data integration. It represent what the final user should be able to do exploiting the DI final outcome (KG). Due to that, the Purpose leads the whole integration process and makes iTelos be a Purpose driven DI methodology.\r\nDomain of Interest (DoI): The portion of the world that involves all the information elements used to satisfy a specific purpose.\r\nIn order to identify the level of reusability of the resources collected and handled along the methodology.\r\niTelos Data Life Cycle:\r\n  * Data Collection & Preparation (DTA-1): align the different source’s data formats, and data standards, representing the information carried through a single data format. The aligned data can be then collected within the methodology’s Input Repository\r\n  * Syntactic Alignment (DTA-2.1): align the data value formats by adopting the same data standards for similar data types\r\n  * Semantic Alignment (DTA-2.2): align the semantic of the data (entity schema representation and word sense disambiguation)\r\n  * Entity Matching (DTA-2.3): align modeled entities with already existing representations of the same entities\r\n  * Application Alignment (DTA-3): the last transformation (considered as out of scope for the DI methodology) aims to align the integrated data in order to let them suitable to be used by a specific application\r\nTeleology is the study of ends and goals, things whose existence or occurrence is purposive. Concretely, in our context, teleologies are ontologies but with the proviso that teleologies focus on function and on how a chosen representation fits a certain purpose. In other words, the teleologies are the way adopted in the DI methodology (iTelos) to model (design, represent) the information that needs to be exploited by final users.\r\nA KG, as result of a DI process, is composed by knowledge (teleologies) and data (datasets) resources combined together in the best way possible in order to achieve the user’s Purpose. There are three different approaches to build such kind of KGs:\r\n  * Knowledge centric: The data schema design comes first and then the data are aligned to it.\r\n  * Data centric: The data schema is mainly (some adaptation are always required) extracted from the data to be integrated.\r\n  * Middle-out approach: The data schema (teleology) is designed considering already existing knowledge resources AND the data. While the datasets are adapted to the schema designed." ;
+        dct:title        "iTelos Principles" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/a21146bd-a38c-49fe-a02f-f8575d1d73e2>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3a8a3044-3e7a-463d-94d9-15c4f4822938>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "zh-CN" , "en-US" ;
+        schema:contactType        "Member" ;
+        schema:email              "xuanli.li@studenti.unitn.it" ;
+        schema:name               "Xuanli Li" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/b9645f82-9500-414c-a51d-255ff657c69e>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/a21146bd-a38c-49fe-a02f-f8575d1d73e2> ;
+        skos:prefLabel   "Completed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Agent/828bf6b9-9f4b-4355-bcd0-d68b188811cb>
+        rdf:type   foaf:Agent ;
+        foaf:name  "Carlo Corradini" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/3a2e0c02-aeba-44d1-b688-a5e21d81d088>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Once"^^xsd:anyURI ;
+        dct:conformsTo          "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W2.L2.M2.T4.1.iTelosPrinciples.pdf" , "iTelos" , "https://unitn-kdi-2021.github.io/unitn-kdi-2021-website/material/slides/W2.L3.M2.T4.2.iTelosStructure.pdf" ;
+        dct:created             "2021-09-13T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "For more information see the following websites: https://unitn-kdi-2021.github.io/unitn-kdi-2021-website https://drive.google.com/drive/folders/12p27IFsmy9Us4AD2lw_0fEvl1k7BaIMk?usp=sharing https://github.com/carlocorradini/Trentino-Transportation" , "The project is related to the Knowledge and Data integration (KDI) course held in the academic year 2021/2022 at the University of Trento (UniTN)." , "Carlo Corradini (https://github.com/carlocorradini) and Xuanli Li(https://github.com/xuanli666) are the members assigned to the realization and finalization." , "With the development of big data technology and cloud storage technology, we are in an era of the rapid increase in information, with countless data or knowledge. How to manage these data and achieve more efficient sharing and utilization is an area that many researchers are exploring, that is, to fulfill the integration of knowledge and data in specific, rather than leaving information be unorganized. This report focuses on integrating all the public transportation as well as sharing vehicles information within Trentino so that a more complete transport information system could help people make a better decision and save time or money as much as possible. Specifically, we pay attention to the application of vehicles that GTFS has not covered, such as sharing bikes, sharing cars, and so on so forth, which is added to the system, and then residents have more choices when determining paths." , "Inception Sheet Metadata regarding Trentino Transportation." , "This project aims to comprehensively consider the transportation situations under the specific Trentino region, not only involving the public transportation services but also the personal tracks. Collecting the latest temporal and spatial information and integrating the data and knowledge from diverse sources. Public transportation services, vehicles, bus stations, train stations, railways, highways, simple streets, public transportation service timelines, and trip schedules are the main important elements that will be mainly paid attention, besides, the mixed using of some vehicles and the parking path will be exploring." ;
+        dct:identifier          "https://github.com/carlocorradini/Trentino-Transportation/tree/main/Teleologies/Inception"^^xsd:anyURI ;
+        dct:issued              "2021-12-10T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "English" ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Organization/2dad489f-4ce3-4e0d-9122-b70df55b8ef2> , <https://www.epos-eu.org/epos-dcat-ap#Agent/828bf6b9-9f4b-4355-bcd0-d68b188811cb> , <https://www.epos-eu.org/epos-dcat-ap#Agent/f9cfb89e-3bb9-41ba-b263-e0386fce30ed> ;
+        dct:temporal            <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/84efa52e-3879-4d09-b0b9-36362e915866> ;
+        dct:title               "Inception Sheet Metadata" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3a8a3044-3e7a-463d-94d9-15c4f4822938> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ca07b831-220f-4c49-bc3b-6e8215eb3238> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/2d8e5529-0e68-4e0d-af09-49a96f1c6c25> ;
+        dcat:keyword            "Fausto Giunchiglia" , "Xuanli Li" , "fare" , "bike" , "Knowledge and Data integration" , "bus" , "Simone Bocca" , "extra-urban transport" , "trentino trasporti" , "car sharing" , "KDI" , "iTelos" , "public transport" , "UniTN" , "cash" , "taxi" , "cable car" , "Carlo Corradini" , "train" , "University of Trento" , "trento" , "bike sharing" , "transport" , "price" , "trentino" , "mobile" , "trip" , "parking" , "ticket" , "route" , "cartascalare" , "bike parking" , "urban transport" ;
+        dcat:landingPage        "https://github.com/carlocorradini/Trentino-Transportation" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/4040fa1c-755a-4706-9fcd-b2e9d6fbb755> , <https://www.epos-eu.org/epos-dcat-ap#Concept/520bf2b3-6fcc-45ad-971a-b17df5fe98f0> ;
+        foaf:page               "https://github.com/carlocorradini/Trentino-Transportation" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Agent/f9cfb89e-3bb9-41ba-b263-e0386fce30ed>
+        rdf:type   foaf:Agent ;
+        foaf:name  "Xuanli Li" .
