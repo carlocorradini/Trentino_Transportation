@@ -1,0 +1,287 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1210985 46.0694727)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/b28a2cf7-3c79-4af0-974b-d529538191ea>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://www.ogc.org/standards/gml" ;
+        dct:description   "Protected car parks for long-term parking of bicycles in GML format." ;
+        dct:format        "https://www.ogc.org/standards/gml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bbccaeef-5dff-4b8d-b7b0-122887a1a091"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "parcheggio_protetto_bike.zip (GML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 243a4665732d42cd44798125797af1ca" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/d5422c66-839f-423b-bfe6-22f7c936f57a> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bbccaeef-5dff-4b8d-b7b0-122887a1a091"^^xsd:anyURI ;
+        dcat:byteSize     "1616.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=parcheggio_protetto_bike&fr=gml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bbccaeef-5dff-4b8d-b7b0-122887a1a091" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1207054 46.0690622)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d8242f76-f8c6-4c66-9ddb-b78a87fb7a3e>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/AutoCAD_DXF" ;
+        dct:description   "Protected car parks for long-term parking of bicycles in DXF format." ;
+        dct:format        "https://wikipedia.org/wiki/AutoCAD_DXF"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/5a4f0d3d-10c2-412f-b04b-c1fb542e0aed"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "parcheggio_protetto_bike.zip (DXF)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 c2bb55eb864cd7719103871fdf975d2e" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/d5422c66-839f-423b-bfe6-22f7c936f57a> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/5a4f0d3d-10c2-412f-b04b-c1fb542e0aed"^^xsd:anyURI ;
+        dcat:byteSize     "3884.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=parcheggio_protetto_bike&fr=dxf"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/5a4f0d3d-10c2-412f-b04b-c1fb542e0aed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/df3069df-1446-4737-8c62-dbeebc052872>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Ufficio relazioni con il pubblico" ;
+        schema:email              "comurp@comune.trento.it" ;
+        schema:name               "Ufficio relazioni con il pubblico" ;
+        schema:telephone          "800017615" , "0461884005" , "0461884453" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/1db8460f-a8ca-4e39-b3a2-b1ec43d1b8d2>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.12011609584675 46.072966313811349)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    " Via Belenzani 19" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b>
+        rdf:type         skos:Concept ;
+        skos:definition  "The Safe Parking Area and other onsite areas accessed by persons utilizing Safe Parking shall be maintained in a safe, clean and orderly condition and manner." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Safe Parking" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5145cf86-c423-4304-ab2d-6c5be6513498>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Information" ;
+        schema:email              "comurp@comune.trento.it" , "ufficio.mobilita@comune.trento.it" ;
+        schema:name               "Comune di Trento" ;
+        schema:telephone          "0461884111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/1491832a-32e9-4870-a089-3fd6697d91d3>
+        rdf:type           epos:Facility ;
+        dct:description    "Parcheggio Ex lavatoio pubblico alla Saluga" ;
+        dct:identifier     "Parcheggio Ex lavatoio pubblico alla Saluga" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/e33fdc22-3255-4b49-a574-a3ce9810e35b> ;
+        dct:title          "Parcheggio Ex lavatoio pubblico alla Saluga" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5145cf86-c423-4304-ab2d-6c5be6513498> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        foaf:page          "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Parcheggio-protetto-per-biciclette"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/a89e4c66-3cd7-4807-bc00-a2c8c30858e4>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/Shapefile" ;
+        dct:description   "Protected car parks for long-term parking of bicycles in SHP format." ;
+        dct:format        "https://wikipedia.org/wiki/Shapefile"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bb3ad878-505e-4ec6-8c6e-738c3958ee0c"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "parcheggio_protetto_bike.zip (SHP)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 5ca3a9f5be66902ce4fbde53d2428351" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/d5422c66-839f-423b-bfe6-22f7c936f57a> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bb3ad878-505e-4ec6-8c6e-738c3958ee0c"^^xsd:anyURI ;
+        dcat:byteSize     "1406.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=parcheggio_protetto_bike&fr=shp"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/bb3ad878-505e-4ec6-8c6e-738c3958ee0c" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/e33fdc22-3255-4b49-a574-a3ce9810e35b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.128581022728055 46.070092240988942)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/028ab36a-6fde-4622-9d18-839d550e0bdb>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> ;
+        schema:email         "protocollo@pec.comune.trento.it" , "comurp@comune.trento.it" ;
+        schema:identifier    "https://www.comune.trento.it"^^xsd:anyURI ;
+        schema:legalName     "Comune di Trento" ;
+        schema:leiCode       "P.IVA 00355870221" ;
+        schema:logo          "https://www.comune.trento.it/var/comunetn/storage/images/10010715-1020-ita-IT/Trento-Citta-Sito-ufficiale-del-Comune-di-Trento_header_logo.jpg"^^xsd:anyURI ;
+        schema:owns          <https://www.epos-eu.org/epos-dcat-ap#Facility/1491832a-32e9-4870-a089-3fd6697d91d3> , <https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd> , <https://www.epos-eu.org/epos-dcat-ap#Facility/1489ca6a-332d-4dca-84dc-1b0bbc62b25d> , <https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee> , <https://www.epos-eu.org/epos-dcat-ap#Facility/fec31560-16ad-4052-bc8e-0d3d6b06c6ff> ;
+        schema:telephone     "0461884111" ;
+        schema:url           "https://www.comune.trento.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/1489ca6a-332d-4dca-84dc-1b0bbc62b25d>
+        rdf:type           epos:Facility ;
+        dct:description    "Parcheggio Zuffo" ;
+        dct:identifier     "Parcheggio Zuffo" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/19e4dee2-26c0-4c67-85dd-cb91b4f3d69e> ;
+        dct:title          "Parcheggio Zuffo" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5145cf86-c423-4304-ab2d-6c5be6513498> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        foaf:page          "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Parcheggio-protetto-per-biciclette"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35>
+        rdf:type         skos:Concept ;
+        skos:definition  "A city or town with its own local government, or the local government itself." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Municipality" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/fec31560-16ad-4052-bc8e-0d3d6b06c6ff>
+        rdf:type           epos:Facility ;
+        dct:description    "Parcheggio Stazione Trento" ;
+        dct:identifier     "Parcheggio Stazione Trento" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/1db8460f-a8ca-4e39-b3a2-b1ec43d1b8d2> ;
+        dct:title          "Parcheggio Stazione Trento" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5145cf86-c423-4304-ab2d-6c5be6513498> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        foaf:page          "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Parcheggio-protetto-per-biciclette"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/5c446c07-3a1a-464f-ba25-86c1d9f1f9aa>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/kml" ;
+        dct:description   "Protected car parks for long-term parking of bicycles in KML format." ;
+        dct:format        "https://developers.google.com/kml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/de34ee61-9cb4-4ab1-83cb-9d54c141c859"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "parcheggio_protetto_bike.zip (KML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 23d270721c57d20ebdcc9012985d1218" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/d5422c66-839f-423b-bfe6-22f7c936f57a> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/de34ee61-9cb4-4ab1-83cb-9d54c141c859"^^xsd:anyURI ;
+        dcat:byteSize     "774.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=parcheggio_protetto_bike&fr=kml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data/resource/de34ee61-9cb4-4ab1-83cb-9d54c141c859" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0>
+        rdf:type         skos:Concept ;
+        skos:definition  "A room or part of a building in which people work, especially sitting at tables with computers, phones, etc., usually as a part of a business or other organization." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Office" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/e4ca0d15-6813-438c-a603-30602361a8eb>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Continuously"^^xsd:anyURI ;
+        dct:conformsTo          "https://wikipedia.org/wiki/Shapefile" , "https://developers.google.com/kml" , "https://wikipedia.org/wiki/AutoCAD_DXF" , "https://www.ogc.org/standards/gml" ;
+        dct:created             "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "Parking Former public washhouse at Saluga: The guarded parking lot for bicycles Ex public washhouse alla Saluga is located in via della Saluga, 4, near the interchange point between the urban and extra-urban public transport lines in Piazza Venezia and near the Buonconsiglio Castle. It is a protected and equipped area for the long-term parking of bicycles, located on the ground floor of a small building, a former public wash house owned by the municipality, recently restored. The building is located a few meters from the kiosk-newsstand and in a strategic position, because it is in the city center and close to bus stops in the Port'Aquila area. The parking can accommodate 38 bicycles arranged on two-level racks. Inside there is a video surveillance system and a validator, near the entrance gate, guarantees access control and management." , "Parking Trento Station: The guarded parking lot for bicycles Stazione di Trento is located in via Dogana, 14, in an area that is strategically important for the city because it is a short walk from the railway station. The number of bike stalls are a total of 200, arranged on two-level racks. A video surveillance system consisting of 8 cameras is in operation within the area. There are two validators for access control and management: one at the entrance and one at the exit from the car park." , "The Municipality of Trento has opened three protected car parks to the public for long-term parking of bicycles. To meet the need to park bicycles safely and comfortably and reduce indiscriminate parking in places not used for this function, the Municipality of Trento has opened three protected parking lots to the public for long-term parking of bicycles (in via Dogana, in via della Saluga and at the ex Zuffo area car park) whose management has been entrusted to Trentino Mobilità spa. Access to the car parks takes place through the validation of the Mitt card of the provincial public transport (smart card) and their use is free for subscribers to public, urban and extra-urban transport and to Trenitalia, while it is paid for others." , "Parking Zuffo: The guarded parking lot for bicycles Zuffo is located in via Dos Trento at the southern end of the Ex Zuffo parking lot, in the immediate vicinity of the Trento Centro motorway exit and is connected to the city by bus lines NP and 6 and the cycle pedestrian path on via Drusus. It looks like a fenced, video-monitored and partially covered area for the long-term parking of 228 bicycles (12 stalls for the E - motion bike sharing service for electric bikes and 216 stalls for private bicycles). Externally, near the entrance, there are also 8 stations of the “C'entro in ciclo” bike sharing service." ;
+        dct:identifier          "c_l378-1128872" ;
+        dct:issued              "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "English" , "Italian" ;
+        dct:modified            "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Organization/028ab36a-6fde-4622-9d18-839d550e0bdb> ;
+        dct:spatial             <https://www.epos-eu.org/epos-dcat-ap#Location/702cf24e-b361-4b36-9232-f4a8d29c3831> ;
+        dct:title               "Parcheggio protetto per biciclette" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5145cf86-c423-4304-ab2d-6c5be6513498> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/a89e4c66-3cd7-4807-bc00-a2c8c30858e4> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/5c446c07-3a1a-464f-ba25-86c1d9f1f9aa> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/b28a2cf7-3c79-4af0-974b-d529538191ea> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/d8242f76-f8c6-4c66-9ddb-b78a87fb7a3e> ;
+        dcat:keyword            "bicycle" , "protected" , "safe" , "transports" , "trento" , "trentino" , "ticket" , "parking" ;
+        dcat:landingPage        "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data" , "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Parcheggio-protetto-per-biciclette" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/582dd406-b44e-4dab-80fb-d2d86f3ba39b> ;
+        foaf:page               "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Parcheggio-protetto-per-biciclette" , "https://dati.trentino.it/dataset/parcheggio-protetto-per-biciclette-open-data" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "A structure with walls and a roof, such as a house or factory." ;
+        dct:title        "Building" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd>
+        rdf:type           epos:Facility ;
+        dct:description    "Municipality" ;
+        dct:identifier     "Municipality" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b> ;
+        dct:title          "Municipality" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        foaf:page          "https://www.comune.trento.it/Comune/Organizzazione-comunale/Organigramma/Uffici"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/702cf24e-b361-4b36-9232-f4a8d29c3831>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.12108 46.06787)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Centralino" ;
+        schema:name               "Centralino" ;
+        schema:telephone          "0461889444" , "0461884111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee>
+        rdf:type           epos:Facility ;
+        dct:description    "Ufficio relazioni con il pubblico" ;
+        dct:identifier     "Ufficio relazioni con il pubblico" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef> ;
+        dct:title          "Ufficio relazioni con il pubblico" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        foaf:page          "https://www.comune.trento.it/Comunicazione/Dialoga-con-noi/Contattaci/URP"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/19e4dee2-26c0-4c67-85dd-cb91b4f3d69e>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.110395659535598 46.075066830564751)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/d5422c66-839f-423b-bfe6-22f7c936f57a>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/df3069df-1446-4737-8c62-dbeebc052872> ;
+        skos:prefLabel   "Completed" .

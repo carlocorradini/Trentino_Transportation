@@ -1,0 +1,247 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1210985 46.0694727)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/48a4bb61-bfec-4eed-9275-1351d9cc9e39>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "To divide food, money, goods, etc. and give part of it to someone else." ;
+        dct:title        "Sharing" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1207054 46.0690622)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/5ff7b4f1-9d4c-45b4-8023-8a428b578c75>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://www.ogc.org/standards/gml" ;
+        dct:description   "Car sharing in GML format." ;
+        dct:format        "https://www.ogc.org/standards/gml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/4f0e4ee2-ebc8-4cda-a87a-9f3bf358ad9d"^^xsd:anyURI ;
+        dct:issued        "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-08T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "car_sharing.zip (GML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 352cc5b1e2f7deec5b29e81769497066" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/9bdbc17a-901c-45c6-af0d-aa1ab9c78981> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/4f0e4ee2-ebc8-4cda-a87a-9f3bf358ad9d"^^xsd:anyURI ;
+        dcat:byteSize     "1772.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=car_sharing&fr=gml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/car-sharing-open-data/resource/4f0e4ee2-ebc8-4cda-a87a-9f3bf358ad9d" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/9bdbc17a-901c-45c6-af0d-aa1ab9c78981>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/42ff9885-e108-423d-9293-89a3215ab623> ;
+        skos:prefLabel   "Completed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Ufficio relazioni con il pubblico" ;
+        schema:email              "comurp@comune.trento.it" ;
+        schema:name               "Ufficio relazioni con il pubblico" ;
+        schema:telephone          "800017615" , "0461884005" , "0461884453" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    " Via Belenzani 19" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2c1697ce-8aa7-4c95-898b-9155469e8cf3>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/kml" ;
+        dct:description   "Car sharing in KML format." ;
+        dct:format        "https://developers.google.com/kml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/78301418-dceb-4347-ae7c-ba582c9c8a53"^^xsd:anyURI ;
+        dct:issued        "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-08T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "car_sharing.zip (KML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 fe75f949c1dde608a7b32d54292159fc" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/9bdbc17a-901c-45c6-af0d-aa1ab9c78981> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/78301418-dceb-4347-ae7c-ba582c9c8a53"^^xsd:anyURI ;
+        dcat:byteSize     "912.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=car_sharing&fr=kml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/car-sharing-open-data/resource/78301418-dceb-4347-ae7c-ba582c9c8a53" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/2ed52e76-600f-4d85-bb76-adc1fa99c6d6>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Information" ;
+        schema:email              "servizio.innovazionedigitale@pec.comune.trento.it" , "servizio.innovazionedigitale@comune.trento.it" ;
+        schema:name               "Comune di Trento" ;
+        schema:telephone          "0461889600" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35>
+        rdf:type         skos:Concept ;
+        skos:definition  "A city or town with its own local government, or the local government itself." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Municipality" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/0f33e543-58c9-48c9-b779-409621ab2942>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/AutoCAD_DXF" ;
+        dct:description   "Car sharing in DXF format." ;
+        dct:format        "https://wikipedia.org/wiki/AutoCAD_DXF"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/9936abfa-8996-4e95-a990-43f4ffb0c48a"^^xsd:anyURI ;
+        dct:issued        "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-08T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "car_sharing.zip (DXF)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 0f513cb1930c829b3aa2566ff9089292" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/9bdbc17a-901c-45c6-af0d-aa1ab9c78981> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/9936abfa-8996-4e95-a990-43f4ffb0c48a"^^xsd:anyURI ;
+        dcat:byteSize     "3913.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=car_sharing&fr=dxf"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/car-sharing-open-data/resource/9936abfa-8996-4e95-a990-43f4ffb0c48a" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/aad52e3d-5c01-47fc-a8c8-19e2321e252b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.116667 46.066666)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0>
+        rdf:type         skos:Concept ;
+        skos:definition  "A room or part of a building in which people work, especially sitting at tables with computers, phones, etc., usually as a part of a business or other organization." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Office" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/42ff9885-e108-423d-9293-89a3215ab623>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "A structure with walls and a roof, such as a house or factory." ;
+        dct:title        "Building" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/af842fc6-7e87-4f78-b6a9-7a64470ec757>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/Shapefile" ;
+        dct:description   "Car sharing in SHP format." ;
+        dct:format        "https://wikipedia.org/wiki/Shapefile"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/b8a114a1-2e7a-4ded-80c5-4480f19d941e"^^xsd:anyURI ;
+        dct:issued        "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-08T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "car_sharing.zip (SHP)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 efb253352e2c3e1811025868121ba1ea" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/9bdbc17a-901c-45c6-af0d-aa1ab9c78981> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/car-sharing-open-data/resource/b8a114a1-2e7a-4ded-80c5-4480f19d941e"^^xsd:anyURI ;
+        dcat:byteSize     "1496.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=car_sharing&fr=shp"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/car-sharing-open-data/resource/b8a114a1-2e7a-4ded-80c5-4480f19d941e" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/1a0bbd53-7b4d-461a-b406-7ea480250e1f>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> ;
+        schema:email         "protocollo@pec.comune.trento.it" , "comurp@comune.trento.it" ;
+        schema:identifier    "https://www.comune.trento.it"^^xsd:anyURI ;
+        schema:legalName     "Comune di Trento" ;
+        schema:leiCode       "P.IVA 00355870221" ;
+        schema:logo          "https://www.comune.trento.it/var/comunetn/storage/images/10010715-1020-ita-IT/Trento-Citta-Sito-ufficiale-del-Comune-di-Trento_header_logo.jpg"^^xsd:anyURI ;
+        schema:owns          <https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee> , <https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd> ;
+        schema:telephone     "0461884111" ;
+        schema:url           "https://www.comune.trento.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/afd56576-cad8-45e5-84ee-aaae59b9c5d1>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Continuously"^^xsd:anyURI ;
+        dct:conformsTo          "https://www.ogc.org/standards/gml" , "https://developers.google.com/kml" , "https://wikipedia.org/wiki/Shapefile" , "https://wikipedia.org/wiki/AutoCAD_DXF" ;
+        dct:created             "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "Car sharing allows you to have a car suitable for family or business needs without owning one and without incurring fixed costs (road tax, insurance, maintenance, garage or parking), but paying only in proportion to use." , "Car sharing stalls location. Parking spaces dedicated to the collection and delivery of Car sharing vehicles. Data taken directly from the site https://www.carsharing.tn.it." ;
+        dct:identifier          "c_l378-1157737" ;
+        dct:issued              "2018-05-04T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "Italian" , "English" ;
+        dct:modified            "2021-07-08T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Organization/1a0bbd53-7b4d-461a-b406-7ea480250e1f> ;
+        dct:spatial             <https://www.epos-eu.org/epos-dcat-ap#Location/aad52e3d-5c01-47fc-a8c8-19e2321e252b> ;
+        dct:title               "Car sharing" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/2ed52e76-600f-4d85-bb76-adc1fa99c6d6> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/0f33e543-58c9-48c9-b779-409621ab2942> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/af842fc6-7e87-4f78-b6a9-7a64470ec757> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/5ff7b4f1-9d4c-45b4-8023-8a428b578c75> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/2c1697ce-8aa7-4c95-898b-9155469e8cf3> ;
+        dcat:keyword            "driving" , "transports" , "students" , "driving license" , "parking" , "car sharing" , "trento" , "family" , "trentino" , "car" , "sharing" ;
+        dcat:landingPage        "https://dati.trentino.it/dataset/car-sharing-open-data" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/036a954c-8ce4-4066-8084-ccf5e7638d86> ;
+        foaf:page               "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Car-sharing" , "https://dati.trentino.it/dataset/car-sharing-open-data" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd>
+        rdf:type           epos:Facility ;
+        dct:description    "Municipality" ;
+        dct:identifier     "Municipality" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b> ;
+        dct:title          "Municipality" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        foaf:page          "https://www.comune.trento.it/Comune/Organizzazione-comunale/Organigramma/Uffici"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/036a954c-8ce4-4066-8084-ccf5e7638d86>
+        rdf:type         skos:Concept ;
+        skos:definition  "Car sharing means the practice where a number of people share the use of one or more cars that are owned by a profit or non-profit car-sharing organization and where such organization may require that use of cars to be reserved in advance, charge fees based on time and/or kilometres driven, and set membership requirements of the car-sharing organization, including the payment of a membership fee that may or may not be refundable." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/48a4bb61-bfec-4eed-9275-1351d9cc9e39> ;
+        skos:prefLabel   "Car sharing" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Centralino" ;
+        schema:name               "Centralino" ;
+        schema:telephone          "0461889444" , "0461884111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee>
+        rdf:type           epos:Facility ;
+        dct:description    "Ufficio relazioni con il pubblico" ;
+        dct:identifier     "Ufficio relazioni con il pubblico" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef> ;
+        dct:title          "Ufficio relazioni con il pubblico" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        foaf:page          "https://www.comune.trento.it/Comunicazione/Dialoga-con-noi/Contattaci/URP"^^xsd:anyURI .

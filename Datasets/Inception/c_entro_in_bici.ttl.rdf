@@ -1,0 +1,247 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1210985 46.0694727)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5d4c8a86-2f98-453a-9314-228b9f1cbcd3>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1207054 46.0690622)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Ufficio relazioni con il pubblico" ;
+        schema:email              "comurp@comune.trento.it" ;
+        schema:name               "Ufficio relazioni con il pubblico" ;
+        schema:telephone          "800017615" , "0461884005" , "0461884453" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/155680df-c330-4c53-9fec-ca690516d6ce>
+        rdf:type         skos:Concept ;
+        skos:definition  "Bike share can be broadly defined as any setting where bicycles are pooled for multiple users. Models include Public Bike Share (PBS) – self-service on-street docked or dockless stations – workplace pool bikes, railway station hubs, loans, lockers and peer to peer sharing." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/0398ad3c-a4ed-477a-a65d-bce371a7e3c4> ;
+        skos:prefLabel   "Bike Sharing" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    " Via Belenzani 19" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/028ab36a-6fde-4622-9d18-839d550e0bdb>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/266a2b24-28ef-4bea-8274-4665545f69ed> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> ;
+        schema:email         "protocollo@pec.comune.trento.it" , "comurp@comune.trento.it" ;
+        schema:identifier    "https://www.comune.trento.it"^^xsd:anyURI ;
+        schema:legalName     "Comune di Trento" ;
+        schema:leiCode       "P.IVA 00355870221" ;
+        schema:logo          "https://www.comune.trento.it/var/comunetn/storage/images/10010715-1020-ita-IT/Trento-Citta-Sito-ufficiale-del-Comune-di-Trento_header_logo.jpg"^^xsd:anyURI ;
+        schema:owns          <https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd> , <https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee> ;
+        schema:telephone     "0461884111" ;
+        schema:url           "https://www.comune.trento.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35>
+        rdf:type         skos:Concept ;
+        skos:definition  "A city or town with its own local government, or the local government itself." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Municipality" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/c502fec8-315b-447e-bfdc-dcdd0a433998>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/Shapefile" ;
+        dct:description   "Bike sharing in SHP format." ;
+        dct:format        "https://wikipedia.org/wiki/Shapefile"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/8a75d8ec-c7b2-45c8-bd53-c7b5a2ace36b"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "centro_in_bici.zip (SHP)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 d01b9f18629fd41dde3fa29dc2acd2c5" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a003f6ce-fe57-4ad8-983d-20c718935f9f> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/8a75d8ec-c7b2-45c8-bd53-c7b5a2ace36b"^^xsd:anyURI ;
+        dcat:byteSize     "1575.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=centro_in_bici&fr=shp"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/8a75d8ec-c7b2-45c8-bd53-c7b5a2ace36b" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/74862c5c-00cf-4578-a6d8-958d4a9dac7d>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.116667 46.066666)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/a51bd148-c9bf-462a-bb1b-823b2c17f0bf>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/kml" ;
+        dct:description   "Bike sharing in KML format." ;
+        dct:format        "https://developers.google.com/kml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/7b21d527-a2ee-4590-8bae-6e0e3d8c2ce6"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "centro_in_bici.zip (KML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 ebc657547dccfba75c216eecc6632fc5" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a003f6ce-fe57-4ad8-983d-20c718935f9f> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/7b21d527-a2ee-4590-8bae-6e0e3d8c2ce6"^^xsd:anyURI ;
+        dcat:byteSize     "1095.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=centro_in_bici&fr=kml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/7b21d527-a2ee-4590-8bae-6e0e3d8c2ce6" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0>
+        rdf:type         skos:Concept ;
+        skos:definition  "A room or part of a building in which people work, especially sitting at tables with computers, phones, etc., usually as a part of a business or other organization." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a> ;
+        skos:prefLabel   "Office" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d4226954-643a-460d-91aa-aac0995f8dc9>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://wikipedia.org/wiki/AutoCAD_DXF" ;
+        dct:description   "Bike sharing in DXF format." ;
+        dct:format        "https://wikipedia.org/wiki/AutoCAD_DXF"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/a25a8795-33c9-4761-8b01-7d0c186bc16c"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "centro_in_bici.zip (DXF)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 a1984c7f79bd4bbb6f39ddbc4e55919b" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a003f6ce-fe57-4ad8-983d-20c718935f9f> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/a25a8795-33c9-4761-8b01-7d0c186bc16c"^^xsd:anyURI ;
+        dcat:byteSize     "4017.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=centro_in_bici&fr=gml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/a25a8795-33c9-4761-8b01-7d0c186bc16c" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/4fb52b1f-1f57-4f67-9bcf-597557c4758a>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "A structure with walls and a roof, such as a house or factory." ;
+        dct:title        "Building" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/a003f6ce-fe57-4ad8-983d-20c718935f9f>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5d4c8a86-2f98-453a-9314-228b9f1cbcd3> ;
+        skos:prefLabel   "Completed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/a1a1f69b-0f5c-4316-a1b4-7146553807c4>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://www.ogc.org/standards/gml" ;
+        dct:description   "Bike sharing in GML format." ;
+        dct:format        "https://www.ogc.org/standards/gml"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/dd2c0cb7-d121-418e-9950-3abbe8883a63"^^xsd:anyURI ;
+        dct:issued        "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/publicdomain/zero/1.0" ;
+        dct:title         "centro_in_bici.zip (GML)" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 b8a8dbbbc4034aa4d61586e87d352c9f" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a003f6ce-fe57-4ad8-983d-20c718935f9f> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/dd2c0cb7-d121-418e-9950-3abbe8883a63"^^xsd:anyURI ;
+        dcat:byteSize     "1905.0"^^xsd:double ;
+        dcat:downloadURL  "http://webapps.comune.trento.it/cartografia/gis/dbexport?db=base&sc=mobilita&ly=centro_in_bici&fr=gml"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/c-entro-in-bici-open-data/resource/dd2c0cb7-d121-418e-9950-3abbe8883a63" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/b2babd57-0b6d-4dc7-a4e5-f0200bdc84cd>
+        rdf:type           epos:Facility ;
+        dct:description    "Municipality" ;
+        dct:identifier     "Municipality" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/a4286369-445f-42d3-acfd-697c6030746b> ;
+        dct:title          "Municipality" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/78818685-c3d2-4849-8e1e-1b30e6535d35> ;
+        foaf:page          "https://www.comune.trento.it/Comune/Organizzazione-comunale/Organigramma/Uffici"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/681cb431-6622-4898-bd84-386d856c995e>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Information" ;
+        schema:email              "ufficio.mobilita@comune.trento.it" , "comurp@comune.trento.it" ;
+        schema:name               "Comune di Trento" ;
+        schema:telephone          "0461884111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/ca858e96-f543-4adf-86a3-dee83959bf6e>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Continuously"^^xsd:anyURI ;
+        dct:conformsTo          "https://wikipedia.org/wiki/AutoCAD_DXF" , "https://wikipedia.org/wiki/Shapefile" , "https://developers.google.com/kml" , "https://www.ogc.org/standards/gml" ;
+        dct:created             "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "C’entro in bici is a service that offers citizens the opportunity to use bicycles madeavailable by the Municipality. In the territory of the Municipality of Trento there is a bicycle rental service for publicuse for travel within the city center. The service, managed by Trentino Mobilità spa, offers citizens the opportunity to use the bicycles made availableby the Municipality and located in various parts of the city in a simple and free way, where modal interchangewith private or public transport is possible. The C’entro in bici service is a closed system with a key that is mainly aimed at commuting users who makeround trips, keeping the bicycle at their place of work for a long time. The user is obliged to return the bicy-cle to the same point of withdrawal in order to be able to recover the personal key that has remained fixed to the rack." ;
+        dct:identifier          "c_l378-1128870" ;
+        dct:issued              "2017-11-08T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "Italian" , "English" ;
+        dct:modified            "2021-07-07T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Organization/028ab36a-6fde-4622-9d18-839d550e0bdb> ;
+        dct:spatial             <https://www.epos-eu.org/epos-dcat-ap#Location/74862c5c-00cf-4578-a6d8-958d4a9dac7d> ;
+        dct:title               "Parcheggio protetto per biciclette" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/681cb431-6622-4898-bd84-386d856c995e> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/d4226954-643a-460d-91aa-aac0995f8dc9> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/c502fec8-315b-447e-bfdc-dcdd0a433998> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/a51bd148-c9bf-462a-bb1b-823b2c17f0bf> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/a1a1f69b-0f5c-4316-a1b4-7146553807c4> ;
+        dcat:keyword            "parking" , "transports" , "bicycle" , "trento" , "city center" , "trentino" , "ticket" , "sharing" ;
+        dcat:landingPage        "https://dati.trentino.it/dataset/c-entro-in-bici-open-data" , "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/C-entro-in-bici" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/155680df-c330-4c53-9fec-ca690516d6ce> ;
+        foaf:page               "https://www.comune.trento.it/Aree-tematiche/Cartografia/Download/C-entro-in-bici" , "https://dati.trentino.it/dataset/c-entro-in-bici-open-data" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7adc3dde-302d-4a86-8356-010ebd36fbb0>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Centralino" ;
+        schema:name               "Centralino" ;
+        schema:telephone          "0461889444" , "0461884111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/0398ad3c-a4ed-477a-a65d-bce371a7e3c4>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "To divide food, money, goods, etc. and give part of it to someone else." ;
+        dct:title        "Sharing" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/2e0e4c74-7994-4e0b-8161-bb9d664ff5ee>
+        rdf:type           epos:Facility ;
+        dct:description    "Ufficio relazioni con il pubblico" ;
+        dct:identifier     "Ufficio relazioni con il pubblico" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/c219cb05-d000-4343-88b0-16854d29f2ef> ;
+        dct:title          "Ufficio relazioni con il pubblico" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b11c132-26b0-4c53-b577-eface5f83d75> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ecea9de3-6096-4fd7-9bc9-0d0443e43df0> ;
+        foaf:page          "https://www.comune.trento.it/Comunicazione/Dialoga-con-noi/Contattaci/URP"^^xsd:anyURI .

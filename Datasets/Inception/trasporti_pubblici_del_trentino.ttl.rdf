@@ -1,0 +1,622 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/dbcf2dba-8759-46e1-8e60-04dda9e1c65f>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Fondo (Autoservizio)" ;
+        dct:identifier     "Sede di Fondo (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d449227b-535c-4da0-838f-95bf27d58eba> ;
+        dct:title          "Sede di Fondo (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/41619c42-8a4f-4188-b326-762f6fd249b9> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ff5a1ea3-6faa-4189-a06b-0bc559c6cfb7>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede centrale" ;
+        schema:name               "Sede centrale" ;
+        schema:telephone          "0461031000" , "0461821000" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/6b8f5555-fa61-4b8d-8809-38a76a0f0779>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "A structure with walls and a roof, such as a house or factory." ;
+        dct:title        "Building" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/a72fdead-47a4-4732-8f9b-dac0e14a00d9>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f548ba2c-d089-4edc-810d-4f513c7fb8a6> ;
+        skos:prefLabel   "Completed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/41619c42-8a4f-4188-b326-762f6fd249b9>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Fondo (Autoservizio)" ;
+        schema:name               "Sede di Fondo (Autoservizio)" ;
+        schema:telephone          "0463831284" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b6b4ab14-dc2b-436f-b5e4-a3e33cf62441>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Tione (Autoservizio)" ;
+        schema:name               "Sede di Tione (Autoservizio)" ;
+        schema:telephone          "0465321222" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9719e0bf-0510-4e14-b13c-5c28cf8aa257>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Riva del Garda (Autoservizio)" ;
+        schema:name               "Sede di Riva del Garda (Autoservizio)" ;
+        schema:telephone          "0464552385" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/25375c0c-3b49-4830-8443-74ffea6c91b4>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Cles (Autoservizio)" ;
+        dct:identifier     "Sede di Cles (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/2d9bd745-a739-4b82-a7fe-16c6b6f7f0e4> ;
+        dct:title          "Sede di Cles (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ec11768e-be23-4711-aa93-17c5093a8439> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/fab3a153-bf54-4199-9674-d2dc6bd0ef8d>
+        rdf:type           epos:Facility ;
+        dct:description    "Stazione FTM Trento" ;
+        dct:identifier     "Stazione FTM Trento" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/8a47c1bb-03e5-42a0-bf11-85ce457eaf77> ;
+        dct:title          "Stazione FTM Trento" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/2c730cbb-5cee-4a7b-909e-b977a8f2494b> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/e18b96be-7b30-4848-adf4-3c3e297be16b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.0918214 46.2133611)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/b9293f85-39a1-456f-b757-f03456948461>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/transit/gtfs" ;
+        dct:description   "Extra-urban public transport data in GTFS format. Main information available: stop records (georeferenced), list of lines, list of routes, list of arrival and departure times. The published zip files comply with the General Transit Feed Specification (GTFS)." ;
+        dct:format        "https://developers.google.com/transit/gtfs"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/0b1db5d6-8d2b-4f06-97f2-f65d605dfeda"^^xsd:anyURI ;
+        dct:issued        "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "Italian" , "English" ;
+        dct:license       "https://creativecommons.org/licenses/by/4.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/licenses/by/4.0" ;
+        dct:title         "GTFS Extraurbano TTE" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 272a5c380933e0ab415b771660249079" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a72fdead-47a4-4732-8f9b-dac0e14a00d9> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/0b1db5d6-8d2b-4f06-97f2-f65d605dfeda"^^xsd:anyURI ;
+        dcat:byteSize     "9801295.0"^^xsd:double ;
+        dcat:downloadURL  "https://www.trentinotrasporti.it/opendata/google_transit_extraurbano_tte.zip"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/0b1db5d6-8d2b-4f06-97f2-f65d605dfeda" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/dc994c58-c753-4f65-8ec1-cbe4be1fefa9>
+        rdf:type           epos:Facility ;
+        dct:description    "Stazione FTM Cles" ;
+        dct:identifier     "Stazione FTM Cles" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/6901d78a-723b-4a80-a4f1-7f1f70c85ebe> ;
+        dct:title          "Stazione FTM Cles" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/91393752-b419-43e7-9016-f54f65a42e19> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a50ccd08-603e-4e13-9c95-a2a5f6f81f3c>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Ufficio programmazione dei servizi pubblici di trasporto e di supporto" ;
+        schema:email              "dip.taec@pec.provincia.tn.it" , "dip.taec@provincia.tn.it" ;
+        schema:name               "Ufficio programmazione dei servizi pubblici di trasporto e di supporto" ;
+        schema:telephone          "0461497942" , "0461497977" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ec11768e-be23-4711-aa93-17c5093a8439>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Cles (Autoservizio)" ;
+        schema:name               "Sede di Cles (Autoservizio)" ;
+        schema:telephone          "0463421563" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/8a47c1bb-03e5-42a0-bf11-85ce457eaf77>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1178873 46.072452)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/58853c06-d471-485e-bcb3-da73dd6ec045>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.8262686 46.1745397)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/5dcc7b0d-8fff-4d02-869a-b91cc63e0bd1>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.6048292 46.3099271)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/fc5e4827-1193-4e2c-a0ef-41769e510d9e>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Tione (Autoservizio)" ;
+        dct:identifier     "Sede di Tione (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/35b1b85e-6480-4483-aced-c870ca3c1bf0> ;
+        dct:title          "Sede di Tione (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b6b4ab14-dc2b-436f-b5e4-a3e33cf62441> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/fb59b429-a56b-435b-a9f7-83e559313e48>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The movement of people or goods from one place to another." ;
+        dct:title        "Transport" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/be46d762-249f-4260-9807-617437305bdd>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede centrale" ;
+        dct:identifier     "Sede centrale" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/cde37938-7c56-4a7f-b225-469e9abea12e> ;
+        dct:title          "Sede centrale" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/313c34aa-f836-4402-9b6e-71358d4f92b2> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ff5a1ea3-6faa-4189-a06b-0bc559c6cfb7> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/313c34aa-f836-4402-9b6e-71358d4f92b2> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/0e1bad88-fa39-46c2-b0ac-df33c1e4cb9b>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(10.8449596 45.8917099)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e329dd5e-974e-4adc-93ed-9507bbbf268b>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Stazione FTM Mezzolombardo" ;
+        schema:name               "Stazione FTM Mezzolombardo" ;
+        schema:telephone          "0461601361" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ee4d3397-861f-49db-a341-45692d1ef548>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Stazione FTM Malè" ;
+        schema:name               "Stazione FTM Malè" ;
+        schema:telephone          "0463901150" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/920f414c-cf24-4da3-8a91-331b34226c3f>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/transit/gtfs" ;
+        dct:description   "ZIP archive containing tariff data in extraurban areas in CSV-GTFS format. The published zip files comply with the General Transit Feed Specification (GTFS)." ;
+        dct:format        "https://developers.google.com/transit/gtfs"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/10e93dd1-3463-4664-8c24-300a7403780a"^^xsd:anyURI ;
+        dct:issued        "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/licenses/by/4.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/licenses/by/4.0" ;
+        dct:title         "tariffe_gtfs_extraurbano" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 6b7071ef68eaf46ce6be360cd159c66c" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a72fdead-47a4-4732-8f9b-dac0e14a00d9> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/10e93dd1-3463-4664-8c24-300a7403780a"^^xsd:anyURI ;
+        dcat:byteSize     "4054251.0"^^xsd:double ;
+        dcat:downloadURL  "https://dati.trentino.it/dataset/6d5c2000-972e-4c21-aef6-fdbba94418a8/resource/10e93dd1-3463-4664-8c24-300a7403780a/download/tariffegtfsextraurbano.zip"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/10e93dd1-3463-4664-8c24-300a7403780a" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/258fe2f7-91c0-4fc4-a84e-eb9b018fec41>
+        rdf:type           schema:Organization ;
+        schema:address     <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/24cc731f-b1ff-446e-b4cf-42f46e9051df> ;
+        schema:identifier  "https://www.provincia.tn.it"^^xsd:anyURI ;
+        schema:legalName   "Provincia autonoma di Trento" ;
+        schema:leiCode     "P.IVA 00337460224" ;
+        schema:logo        "https://www.provincia.tn.it/var/opencitypat/storage/images/1284-242-ita-IT/Homepage_header_logo.png"^^xsd:anyURI ;
+        schema:owns        <https://www.epos-eu.org/epos-dcat-ap#Facility/0940c634-9980-4179-9728-a34a179f0c36> , <https://www.epos-eu.org/epos-dcat-ap#Facility/0119a8f7-9527-4961-807e-ef21cc3d340a> ;
+        schema:telephone   "0461495111" , "800903606" ;
+        schema:url         "https://www.provincia.tn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/e12581ec-4386-4610-91f7-6993807379c6>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38121" ;
+        schema:streetAddress    "Via Innsbruck 65" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/e6fb8892-43bd-4b98-8a20-0e6633524c89>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Fiera di Primiero (Autoservizio)" ;
+        dct:identifier     "Sede di Fiera di Primiero (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/58853c06-d471-485e-bcb3-da73dd6ec045> ;
+        dct:title          "Sede di Fiera di Primiero (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/c3649df2-7dc4-4923-9e38-35bcff4218df> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/cde37938-7c56-4a7f-b225-469e9abea12e>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.089731 46.1086814)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/26412772-d28b-4f5f-98de-6098eaff869a>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(10.9047012 46.3449115)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b0200c37-cf41-4bd0-87f8-b599c50e445c>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Rovereto (Autoservizio)" ;
+        schema:name               "Sede di Rovereto (Autoservizio)" ;
+        schema:telephone          "0464434299" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/ad298d32-6801-475b-a737-3e17be21a8a4>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/transit/gtfs" ;
+        dct:description   "Urban public transport data in GTFS format. Main information available: stop records (georeferenced), list of lines, list of routes, list of arrival and departure times. The published zip files comply with the General Transit Feed Specification (GTFS)." ;
+        dct:format        "https://developers.google.com/transit/gtfs"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/57869023-adfa-467e-8100-76403257d2d1"^^xsd:anyURI ;
+        dct:issued        "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/licenses/by/4.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/licenses/by/4.0" ;
+        dct:title         "GTFS Urbano TTE" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 378a7dd0117c61e422452258a445ec48" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a72fdead-47a4-4732-8f9b-dac0e14a00d9> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/57869023-adfa-467e-8100-76403257d2d1"^^xsd:anyURI ;
+        dcat:byteSize     "1162843.0"^^xsd:double ;
+        dcat:downloadURL  "https://www.trentinotrasporti.it/opendata/google_transit_urbano_tte.zip"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/57869023-adfa-467e-8100-76403257d2d1" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/88d54552-a938-4a5d-8f13-8fd376880ffd>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Borgo Valsugana (Autoservizio)" ;
+        dct:identifier     "Sede di Borgo Valsugana (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/2ab61512-2c32-4c8e-9613-e510c8a2eab0> ;
+        dct:title          "Sede di Borgo Valsugana (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b07d1a2b-54c3-4aaa-adec-f032bd4c53cf> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/91393752-b419-43e7-9016-f54f65a42e19>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Stazione FTM Cles" ;
+        schema:name               "Stazione FTM Cles" ;
+        schema:telephone          "0463421042" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f548ba2c-d089-4edc-810d-4f513c7fb8a6>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/2d9bd745-a739-4b82-a7fe-16c6b6f7f0e4>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.0380046 46.3635158)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/283e8268-801e-4bc0-b445-26ea163e25f3>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-06-24T00:00:00Z"^^xsd:dateTime ;
+        schema:startDate  "2021-06-11T00:00:00Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/9088ff3a-db08-4baa-a067-8a1401f17658>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1209891 46.0722834)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/492c2ef1-c2d3-4877-92dd-8a969d97d590>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Servizio Clienti" ;
+        schema:email              "segnalazioni@trentinotrasporti.it" ;
+        schema:name               "Servizio Clienti" ;
+        schema:telephone          "0461031000" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/2ab61512-2c32-4c8e-9613-e510c8a2eab0>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.4604201 46.0523401)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/c69e71e2-2655-4abf-8cc3-a47f481249f4>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Predazzo (Autoservizio)" ;
+        dct:identifier     "Sede di Predazzo (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/5dcc7b0d-8fff-4d02-869a-b91cc63e0bd1> ;
+        dct:title          "Sede di Predazzo (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/1b045dab-ba6c-4494-bb98-71550e2afa1f> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d>
+        rdf:type         skos:Concept ;
+        skos:definition  "The area or building at a station, airport, or port that is used by passengers leaving or arriving by train, aircraft, or ship." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/6b8f5555-fa61-4b8d-8809-38a76a0f0779> ;
+        skos:prefLabel   "Terminal" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/c3649df2-7dc4-4923-9e38-35bcff4218df>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Fiera di Primiero (Autoservizio)" ;
+        schema:name               "Sede di Fiera di Primiero (Autoservizio)" ;
+        schema:telephone          "043964165" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/be75b0a6-4c31-431b-8b6e-e5dc9af53dec>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Rovereto (Autoservizio)" ;
+        dct:identifier     "Sede di Rovereto (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/a0c20590-47ee-4a36-bbe9-943eb53b89b0> ;
+        dct:title          "Sede di Rovereto (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b0200c37-cf41-4bd0-87f8-b599c50e445c> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/313c34aa-f836-4402-9b6e-71358d4f92b2>
+        rdf:type         skos:Concept ;
+        skos:definition  "The main offices of an organization such as the army, the police, or a business company." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/6b8f5555-fa61-4b8d-8809-38a76a0f0779> ;
+        skos:prefLabel   "Headquarter" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/1b045dab-ba6c-4494-bb98-71550e2afa1f>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Predazzo (Autoservizio)" ;
+        schema:name               "Sede di Predazzo (Autoservizio)" ;
+        schema:telephone          "0462501104" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9>
+        rdf:type         skos:Concept ;
+        skos:definition  "A building where vehicles are kept." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/6b8f5555-fa61-4b8d-8809-38a76a0f0779> ;
+        skos:prefLabel   "Garage" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/cccf9c98-7a3e-41cd-bca9-a7c6b5e00c89>
+        rdf:type         skos:Concept ;
+        skos:definition  "A room or part of a building in which people work, especially sitting at tables with computers, phones, etc., usually as a part of a business or other organization." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/6b8f5555-fa61-4b8d-8809-38a76a0f0779> ;
+        skos:prefLabel   "Office" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/32359fe2-56e3-42c3-b052-bb12a8e96a63>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Tutela assicurativa" ;
+        schema:email              "serviziosinistri@trentinotrasporti.it" ;
+        schema:name               "Tutela assicurativa" ;
+        schema:telephone          "0461031000" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/0119a8f7-9527-4961-807e-ef21cc3d340a>
+        rdf:type           epos:Facility ;
+        dct:description    "Palazzo della Provincia Autonoma di Trento" ;
+        dct:identifier     "Palazzo della Provincia Autonoma di Trento" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/9088ff3a-db08-4baa-a067-8a1401f17658> ;
+        dct:title          "Palazzo della Provincia Autonoma di Trento" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/cccf9c98-7a3e-41cd-bca9-a7c6b5e00c89> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a09d4df2-1fa3-4e00-8934-e4d61335bb44> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/cccf9c98-7a3e-41cd-bca9-a7c6b5e00c89> ;
+        foaf:page          "https://www.provincia.tn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/320b8936-133f-4e6d-addc-917d8b908c35>
+        rdf:type           epos:Facility ;
+        dct:description    "Stazione FTM Malè" ;
+        dct:identifier     "Stazione FTM Malè" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/f6c3c4b5-cc82-44e6-9010-68ca435421fd> ;
+        dct:title          "Stazione FTM Malè" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ee4d3397-861f-49db-a341-45692d1ef548> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/734164e5-be4d-4436-89be-97169100f5f6>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Croviana (Autoservizio)" ;
+        dct:identifier     "Sede di Croviana (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/26412772-d28b-4f5f-98de-6098eaff869a> ;
+        dct:title          "Sede di Croviana (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/61768f80-210a-45d3-8d4a-5883a2f90dfe> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/1df268d3-757b-4cd5-b5b5-70dcb8cbded9> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/f6c3c4b5-cc82-44e6-9010-68ca435421fd>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(10.9116843 46.3514471)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3aa32c9c-cea2-4fa4-a379-19ffe36971dc>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Information" ;
+        schema:email              "info@trentinotrasporti.it" ;
+        schema:name               "Information" ;
+        schema:telephone          "0461821000" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a4acb0c8-9f36-42ec-891c-a2becb5a8cb2>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Semiannual"^^xsd:anyURI ;
+        dct:conformsTo          "https://developers.google.com/transit/gtfs" ;
+        dct:created             "2013-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "Trentino Trasporti is the public transport company of the Autonomous Province of Trento, which also operates as the infrastructure manager of the Trento-Malé-Mezzana railway. The company is the concessionaire for the urban service in the cities of Trento and Rovereto, for the suburban service in all the Trentino valleys and for the management of the infrastructure of the Trento-Malé-Mezzana railway line." ;
+        dct:identifier          "d3c9f167-3271-4a43-b5c1-e0879aa5ad3f"^^xsd:anyURI ;
+        dct:issued              "2013-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "English" , "Italian" ;
+        dct:modified            "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Organization/a38ce2e8-c59f-402d-b00f-c3fc08a6f398> , <https://www.epos-eu.org/epos-dcat-ap#Organization/258fe2f7-91c0-4fc4-a84e-eb9b018fec41> ;
+        dct:spatial             <https://www.epos-eu.org/epos-dcat-ap#Location/c8bbfb55-cf38-4cfb-ae57-279897cd7e5c> ;
+        dct:temporal            <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/283e8268-801e-4bc0-b445-26ea163e25f3> ;
+        dct:title               "Trasporti pubblici del Trentino" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b62942da-5d94-4925-b41a-ba2d946ae41f> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3aa32c9c-cea2-4fa4-a379-19ffe36971dc> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/b9293f85-39a1-456f-b757-f03456948461> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/ad298d32-6801-475b-a737-3e17be21a8a4> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/920f414c-cf24-4da3-8a91-331b34226c3f> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/18647c87-5dcc-4d83-ae91-d90b52cc9c0a> ;
+        dcat:keyword            "money" , "bus" , "fare" , "urban transport " , "gtfs" , "price" , "cable car" , "ticket" , "transports" , "cartascalare" , "cash" , "trentino" , "train" , "extra-urban transport " , "mobile" , "public transport" ;
+        dcat:landingPage        "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/2ce7d048-f2e4-4f42-9bd8-6c6ea18539ae> ;
+        foaf:page               "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs" , "http://www.trasporti.provincia.tn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/18647c87-5dcc-4d83-ae91-d90b52cc9c0a>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "https://developers.google.com/transit/gtfs" ;
+        dct:description   "ZIP archive containing tariff data in urban areas in CSV-GTFS format. The published zip files comply with the General Transit Feed Specification (GTFS)." ;
+        dct:format        "https://developers.google.com/transit/gtfs"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/44efc0bd-223a-49c7-b3b0-16128e32813c"^^xsd:anyURI ;
+        dct:issued        "2021-06-11T00:00:00Z"^^xsd:dateTime ;
+        dct:language      "English" , "Italian" ;
+        dct:license       "https://creativecommons.org/licenses/by/4.0"^^xsd:anyURI ;
+        dct:modified      "2021-07-01T00:00:00Z"^^xsd:dateTime ;
+        dct:rights        "https://creativecommons.org/licenses/by/4.0" ;
+        dct:title         "tariffe_gtfs_urbano" ;
+        dct:type          "Collection"^^xsd:anyURI ;
+        spdx:checksum     "md5 0217a5d7eef680d2cc36b3b6cc5dcd10" ;
+        adms:status       <https://www.epos-eu.org/epos-dcat-ap#Concept/a72fdead-47a4-4732-8f9b-dac0e14a00d9> ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/44efc0bd-223a-49c7-b3b0-16128e32813c"^^xsd:anyURI ;
+        dcat:byteSize     "6556.0"^^xsd:double ;
+        dcat:downloadURL  "https://dati.trentino.it/dataset/6d5c2000-972e-4c21-aef6-fdbba94418a8/resource/44efc0bd-223a-49c7-b3b0-16128e32813c/download/tariffegtfsurbano.zip"^^xsd:anyURI ;
+        dcat:mediaType    "application/zip" ;
+        foaf:page         "https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs/resource/44efc0bd-223a-49c7-b3b0-16128e32813c" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/0940c634-9980-4179-9728-a34a179f0c36>
+        rdf:type           epos:Facility ;
+        dct:description    "Ufficio programmazione dei servizi pubblici di trasporto e di supporto" ;
+        dct:identifier     "Ufficio programmazione dei servizi pubblici di trasporto e di supporto" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/abf210db-7ae1-4bd3-ab88-38294b394335> ;
+        dct:title          "Ufficio programmazione dei servizi pubblici di trasporto e di supporto" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/cccf9c98-7a3e-41cd-bca9-a7c6b5e00c89> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a50ccd08-603e-4e13-9c95-a2a5f6f81f3c> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/cccf9c98-7a3e-41cd-bca9-a7c6b5e00c89> ;
+        foaf:page          "https://www.provincia.tn.it/Amministrazione/Strutture-organizzative/Ufficio-programmazione-dei-servizi-pubblici-di-trasporto-e-di-supporto"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b62942da-5d94-4925-b41a-ba2d946ae41f>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Servizio Trasporti pubblici" ;
+        schema:email              "umst.mobilita@provincia.tn.it" , "umst.mobilita@pec.provincia.tn.it" ;
+        schema:name               "Servizio Trasporti pubblici" ;
+        schema:telephone          "800903606" , "0461495111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a09d4df2-1fa3-4e00-8934-e4d61335bb44>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Palazzo della Provincia Autonoma di Trento" ;
+        schema:name               "Palazzo della Provincia Autonoma di Trento" ;
+        schema:telephone          "0461495111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/6901d78a-723b-4a80-a4f1-7f1f70c85ebe>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.0383143 46.3638203)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/abf210db-7ae1-4bd3-ab88-38294b394335>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.119378 46.070912)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/a38ce2e8-c59f-402d-b00f-c3fc08a6f398>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/e12581ec-4386-4610-91f7-6993807379c6> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/07d615b7-aab1-462d-8ba0-1a33f7bcc15a> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/32359fe2-56e3-42c3-b052-bb12a8e96a63> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/492c2ef1-c2d3-4877-92dd-8a969d97d590> ;
+        schema:email         "info@trentinotrasporti.it" ;
+        schema:identifier    "https://www.trentinotrasporti.it"^^xsd:anyURI ;
+        schema:legalName     "Trentino Trasporti S.p.A." ;
+        schema:leiCode       "P.IVA 01807370224" ;
+        schema:logo          "https://www.trentinotrasporti.it/images/simboli/logo.svg"^^xsd:anyURI ;
+        schema:owns          <https://www.epos-eu.org/epos-dcat-ap#Facility/dbcf2dba-8759-46e1-8e60-04dda9e1c65f> , <https://www.epos-eu.org/epos-dcat-ap#Facility/8c958073-99cf-4f91-b916-2e6c21d2f987> , <https://www.epos-eu.org/epos-dcat-ap#Facility/c69e71e2-2655-4abf-8cc3-a47f481249f4> , <https://www.epos-eu.org/epos-dcat-ap#Facility/fc5e4827-1193-4e2c-a0ef-41769e510d9e> , <https://www.epos-eu.org/epos-dcat-ap#Facility/be46d762-249f-4260-9807-617437305bdd> , <https://www.epos-eu.org/epos-dcat-ap#Facility/e4cd1c7f-28d0-4476-a763-fb7ed3fb3199> , <https://www.epos-eu.org/epos-dcat-ap#Facility/fab3a153-bf54-4199-9674-d2dc6bd0ef8d> , <https://www.epos-eu.org/epos-dcat-ap#Facility/dc994c58-c753-4f65-8ec1-cbe4be1fefa9> , <https://www.epos-eu.org/epos-dcat-ap#Facility/e6fb8892-43bd-4b98-8a20-0e6633524c89> , <https://www.epos-eu.org/epos-dcat-ap#Facility/25375c0c-3b49-4830-8443-74ffea6c91b4> , <https://www.epos-eu.org/epos-dcat-ap#Facility/be75b0a6-4c31-431b-8b6e-e5dc9af53dec> , <https://www.epos-eu.org/epos-dcat-ap#Facility/734164e5-be4d-4436-89be-97169100f5f6> , <https://www.epos-eu.org/epos-dcat-ap#Facility/88d54552-a938-4a5d-8f13-8fd376880ffd> , <https://www.epos-eu.org/epos-dcat-ap#Facility/320b8936-133f-4e6d-addc-917d8b908c35> ;
+        schema:telephone     "0461821000" ;
+        schema:url           "https://www.trentinotrasporti.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b07d1a2b-54c3-4aaa-adec-f032bd4c53cf>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Borgo Valsugana (Autoservizio)" ;
+        schema:name               "Sede di Borgo Valsugana (Autoservizio)" ;
+        schema:telephone          "0461754049" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/2ce7d048-f2e4-4f42-9bd8-6c6ea18539ae>
+        rdf:type         skos:Concept ;
+        skos:definition  "Land transport is the transport or movement of people, animals or goods from one location to another location on land." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/fb59b429-a56b-435b-a9f7-83e559313e48> ;
+        skos:prefLabel   "Land Transport" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/e4cd1c7f-28d0-4476-a763-fb7ed3fb3199>
+        rdf:type           epos:Facility ;
+        dct:description    "Stazione FTM Mezzolombardo" ;
+        dct:identifier     "Stazione FTM Mezzolombardo" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/e18b96be-7b30-4848-adf4-3c3e297be16b> ;
+        dct:title          "Stazione FTM Mezzolombardo" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/e329dd5e-974e-4adc-93ed-9507bbbf268b> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/2c730cbb-5cee-4a7b-909e-b977a8f2494b>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Stazione FTM Trento" ;
+        schema:name               "Stazione FTM Trento" ;
+        schema:telephone          "0461238350" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/24cc731f-b1ff-446e-b4cf-42f46e9051df>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    "Piazza Dante 15" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Facility/8c958073-99cf-4f91-b916-2e6c21d2f987>
+        rdf:type           epos:Facility ;
+        dct:description    "Sede di Riva del Garda (Autoservizio)" ;
+        dct:identifier     "Sede di Riva del Garda (Autoservizio)" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/0e1bad88-fa39-46c2-b0ac-df33c1e4cb9b> ;
+        dct:title          "Sede di Riva del Garda (Autoservizio)" ;
+        dct:type           <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9719e0bf-0510-4e14-b13c-5c28cf8aa257> ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/7d8be6da-3f96-474f-ad26-f1a81305e39d> ;
+        foaf:page          "https://www.trentinotrasporti.it/contatti/contatti"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/d449227b-535c-4da0-838f-95bf27d58eba>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.1417921 46.4658486)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/c8bbfb55-cf38-4cfb-ae57-279897cd7e5c>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.12108 46.06787)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/35b1b85e-6480-4483-aced-c870ca3c1bf0>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(10.726113 46.033131)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/61768f80-210a-45d3-8d4a-5883a2f90dfe>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Sede di Croviana (Autoservizio)" ;
+        schema:name               "Sede di Croviana (Autoservizio)" ;
+        schema:telephone          "0463901587" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/a0c20590-47ee-4a36-bbe9-943eb53b89b0>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.0312586 45.8930301)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/07d615b7-aab1-462d-8ba0-1a33f7bcc15a>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "Call Center" ;
+        schema:name               "Call Center" ;
+        schema:telephone          "0461821000" .
