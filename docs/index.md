@@ -53,4 +53,22 @@ The 7 initial datasets we used in total and the brief descriptions are delineate
 
 ### Data Properties
 <img src="./data_properties.jpg" width="520px" alt="Data Properties"/>
+
 ## KG
+
+> <https://drive.google.com/drive/folders/1d7QPcG3uI9aHw_UXUsKuiDtCzOwapA-f?usp=sharing>
+
+### Karmalinker
+
+<img src="./trip.jpeg" width="520px" alt="Karmaliker | Trip"/>
+
+#### Model
+> <https://drive.google.com/drive/folders/1CKqRS7BNZgsI-JfODf2f7QQR9_r4TXDg?usp=sharing>
+
+#### RDF
+
+> <https://drive.google.com/drive/folders/1jCidpiOWW3D0rZ6omCVYLl81rzbPIGut?usp=sharing>
+
+## License
+
+MIT
