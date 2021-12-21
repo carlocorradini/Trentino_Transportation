@@ -44,7 +44,7 @@ The 7 initial datasets we used in total and the brief descriptions are delineate
    <https://developers.google.com/transit/gtfs/reference><br/>
    Our main reference schema is GTFS static transit, which defines a common format for public transportation schedules and associated geographic information. GTFS "feeds" let public transit agencies publish their transit data and developers write applications that consume that data in an interoperable way, for example, Trentino Transporti applies GTFS format to represent their data.
 2. ParkingFacility<br/>
-   https://schema.org/ParkingFacility
+   https://schema.org/ParkingFacility<br/>
    Schema.org provides us a number of reference sechmas. ParkingFacility defines some etypes and peoperties about parking lot or other parking facility. Since we have bike, car and taxi parking stop datasets, ParkingFacility offers the related concepts for creating our ontology.
 
 ## ETG
