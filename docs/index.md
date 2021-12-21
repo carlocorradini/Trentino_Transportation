@@ -40,6 +40,12 @@ The 7 initial datasets we used in total and the brief descriptions are delineate
    The dataset manifests the data about the taxi within the municipal area. It reveals the some attributes such as location, price, telephone, and so on so forth.
    
 ## Reference Schemas
+1. GTFS<br/>
+   <https://developers.google.com/transit/gtfs/reference><br/>
+   Our main reference schema is GTFS static transit, which defines a common format for public transportation schedules and associated geographic information. GTFS "feeds" let public transit agencies publish their transit data and developers write applications that consume that data in an interoperable way, for example, Trentino Transporti applies GTFS format to represent their data.
+2. ParkingFacility<br/>
+   https://schema.org/ParkingFacility
+   Schema.org provides us a number of reference sechmas. ParkingFacility defines some etypes and peoperties about parking lot or other parking facility. Since we have bike, car and taxi parking stop datasets, ParkingFacility offers the related concepts for creating our ontology.
 
 ## ETG
 
