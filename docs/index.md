@@ -43,4 +43,14 @@ The 7 initial datasets we used in total and the brief descriptions are delineate
 
 ## ETG
 
+> <https://drive.google.com/drive/folders/1-8ZkqbEZx3lub4H8jUNB-c5bIZ8ptkNe?usp=sharing>
+
+### Classes
+<img src="./classes.jpg" width="520px" alt="Classes"/>
+
+### Object Properties
+<img src="./object_properties.jpg" width="520px" alt="Object Properties"/>
+
+### Data Properties
+<img src="./data_properties.jpg" width="520px" alt="Data Properties"/>
 ## KG
