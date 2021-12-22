@@ -1,10 +1,20 @@
 # Trentino Transportation
 
-> Material: <https://drive.google.com/drive/folders/12p27IFsmy9Us4AD2lw_0fEvl1k7BaIMk?usp=sharing>
-> 
-> GitHub: <https://github.com/carlocorradini/Trentino_Transportation>
-
 By Carlo Corradini and Xuanli Li
+
+## Material
+
+### GitHub
+<https://github.com/carlocorradini/Trentino_Transportation>
+
+### Google Drive
+<https://drive.google.com/drive/folders/12p27IFsmy9Us4AD2lw_0fEvl1k7BaIMk?usp=sharing>
+
+### Report
+<https://github.com/carlocorradini/Trentino_Transportation/raw/main/Documentation/Project%20Report.pdf>
+
+### Presentation
+<https://github.com/carlocorradini/Trentino_Transportation/raw/main/Documentation/Project%20Presentation.pdf>
 
 ## Domain
 This project aims to comprehensively consider the transportation situations under the specific Trentino region, not only involving the public transportation services but also the personal tracks. Collecting the latest temporal and spatial information and integrating the data and knowledge from diverse sources. Public transportation services, vehicles, bus stations, train stations, railways, highways, simple streets, public transportation service timelines, and trip schedules are the main important elements that will be mainly paid attention, besides, the mixed using of some vehicles and the parking path will be exploring.
